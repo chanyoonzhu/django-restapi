@@ -5,4 +5,4 @@ from .models import Dog
 class DogSerializer(serializers.ModelSerializer):
     class Meta:
         model = Dog
-        fields = ('id', 'name', 'breed')
+        fields = ('id', 'name', 'breed', 'age')

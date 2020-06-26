@@ -4,6 +4,7 @@ from django.db import models
 class Dog(models.Model):
     name = models.CharField(max_length=64)
     breed = models.CharField(max_length=128)
+    age = models.IntegerField()
 
 def __str__(self):
-    return f'{self.name}:{self.breed}'
+    return f'{self.name}:{self.breed}:{self.age}'
